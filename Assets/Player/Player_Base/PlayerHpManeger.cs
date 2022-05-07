@@ -16,18 +16,21 @@ public class PlayerHpManeger : MonoBehaviour
         _CurrentHP = _StartingHP;
         _Text = GameObject.Find("HPText");
         HPDisplay();
-
     }
 
     public void ApplyDamage(int Damage)
     {
         _CurrentHP -= Damage;
         _CurrentHP = Mathf.Clamp(_CurrentHP, 0, Mathf.Infinity);
-        print(_CurrentHP);
         HPDisplay();
         if (_CurrentHP <= 0)
         {
-            print("Dead");
+            gameObject.GetComponent<GunBehavior>().enabled = false;
+            gameObject.GetComponent<SphereCollider>().enabled = false;
+            gameObject.GetComponent<Rigidbody>().isKinematic = true;
+            GameObject.Find("Gun").SetActive(false);
+            GameObject.Find("Bill").SetActive(false);
+            GameObject.Find("StartEnd").GetComponent<StartEnd>().SendMessage("EndScreen");
         }
     }
 

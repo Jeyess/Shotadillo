@@ -28,6 +28,7 @@ public class MeleeAI : MonoBehaviour
     private int _Cycle = 0;
 
     private bool _HitTimeout = false;
+    public float _Damage;
     public float _TimeBetweenHits;
 
     // Start is called before the first frame update
@@ -64,7 +65,6 @@ public class MeleeAI : MonoBehaviour
         RaycastHit Hit;
         Vector2 PlayerDir = (_Player.transform.position - transform.position).normalized;
         Physics.Raycast(transform.position, PlayerDir, out Hit, 100f);
-        //print(Hit.transform.tag);
         if (_PlayerInRange && Hit.transform.tag == "Player")
         {
             _PlayerInSight = true;
@@ -72,10 +72,6 @@ public class MeleeAI : MonoBehaviour
             RaycastHit Obstcle;
             Vector2 PlayerDirX = new Vector2(PlayerDir.x, 0).normalized;
             Physics.Raycast(transform.position, PlayerDirX, out Obstcle, _ObstcleDetectionRange);
-            //if (Obstcle.transform != null)
-            //{
-            //    print(Obstcle.transform.tag);
-            //}
             if (Physics.CheckSphere(transform.position, 1, _GroundMask))
             {
                 if (Obstcle.transform == null || Obstcle.transform.tag != "Ground")
@@ -188,7 +184,7 @@ public class MeleeAI : MonoBehaviour
     {
         if (collision.transform.tag == "Player" && !_HitTimeout)
         {
-            collision.transform.SendMessage("ApplyDamage", 20);
+            collision.transform.SendMessage("ApplyDamage", _Damage);
             _HitTimeout = true;
             Invoke(nameof(HitTimer), _TimeBetweenHits);
         }

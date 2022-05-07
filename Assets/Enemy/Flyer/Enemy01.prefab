@@ -130,6 +130,8 @@ MonoBehaviour:
   _TrackSpeed: 2500
   _MoveTimeLimit: 3
   _ObstcleDetectionRange: 1
+  _Damage: 10
+  _TimeBetweenHits: 0.5
 --- !u!114 &1981983775494446706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,3 +144,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16d127284b74c4f938c8392b30b0b9de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _StartingHP: 20

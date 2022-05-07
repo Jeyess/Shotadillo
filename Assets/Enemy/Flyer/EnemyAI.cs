@@ -24,6 +24,9 @@ public class EnemyAI : MonoBehaviour
     public float _ObstcleDetectionRange;
     private LayerMask _GroundMask;
 
+    private bool _HitTimeout = false;
+    public float _Damage;
+    public float _TimeBetweenHits;
 
     
     // Start is called before the first frame update
@@ -82,7 +85,7 @@ public class EnemyAI : MonoBehaviour
                 Vector2 PlayerDir = (_PlayerLastPos - transform.position).normalized;
                 //print(PlayerDir);
                 _RB.AddForce(PlayerDir * _TrackSpeed * Time.deltaTime, ForceMode.Force);
-                if (Vector3.Distance(_PlayerLastPos, transform.position) < 0.2)
+                if (Vector3.Distance(_PlayerLastPos, transform.position) < 0.2 || _RB.velocity.magnitude < 0.1f)
                 {
                     _PlayerLastPos = Vector3.zero;
                 }
@@ -117,10 +120,19 @@ public class EnemyAI : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        _RndX = Random.Range(-5, 6);
-        _RndY = Random.Range(-5, 6);
-        _RB.AddForce(new Vector2(_RndX, _RndY).normalized * _TrackSpeed * Time.deltaTime, ForceMode.Force);
+        if (collision.transform.tag == "Player" && !_HitTimeout)
+        {
+            collision.transform.SendMessage("ApplyDamage", _Damage);
+            _HitTimeout = true;
+            Invoke(nameof(HitTimer), _TimeBetweenHits);
+        }
     }
+
+    private void HitTimer()
+    {
+        _HitTimeout = false;
+    }
+
 
 
     private void OnDrawGizmosSelected()

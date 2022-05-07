@@ -23,6 +23,6 @@ MonoBehaviour:
   BulletCount: 1
   Spread: 0
   ExplosionRadius: 5
-  ExplosionForce: 50
+  ExplosionForce: 30
   ExplosiveFalloff: 1
   Color: {fileID: 0}

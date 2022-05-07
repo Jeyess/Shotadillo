@@ -158,10 +158,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _CheckRange: 20
-  _TrackSpeed: 1000
+  _TrackSpeed: 2000
   _MoveTimeLimit: 1.5
   _ObstcleDetectionRange: 1
   _PosChecker: {fileID: 5237659278965864936}
+  _Damage: 20
   _TimeBetweenHits: 1
 --- !u!114 &-4245595537753577824
 MonoBehaviour:
