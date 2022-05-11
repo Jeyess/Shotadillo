@@ -24,6 +24,7 @@ public class StartEnd : MonoBehaviour
 
     public void EndScreen()
     {
+        Time.timeScale = 0;
         _Canvas.GetComponent<Canvas>().enabled = true;
         GameObject.Find("Score").GetComponent<Text>().text = "Score : " + _Score;
         _Restart.onClick.AddListener(Restart);
@@ -32,6 +33,7 @@ public class StartEnd : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene("SampleScene");
+        Time.timeScale = 1;
     }
 
 
