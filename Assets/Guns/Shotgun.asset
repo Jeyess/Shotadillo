@@ -15,7 +15,7 @@ MonoBehaviour:
   GunID: 1
   Damage: 5
   Speed: 50
-  Knockback: 12
+  Knockback: 7
   MagSize: 4
   ReloadTime: 1
   Timeout: 1

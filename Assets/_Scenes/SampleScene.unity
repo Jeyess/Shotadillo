@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -702,7 +702,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &568891232
 GameObject:
@@ -2756,13 +2756,37 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8852946051450306658, guid: d3d28c250ab424c21946dbe94aa41b1b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 44.174965
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852946051450306658, guid: d3d28c250ab424c21946dbe94aa41b1b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 44.174965
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852946051450306658, guid: d3d28c250ab424c21946dbe94aa41b1b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 44.174965
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852946051450306658, guid: d3d28c250ab424c21946dbe94aa41b1b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.8928
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852946051450306658, guid: d3d28c250ab424c21946dbe94aa41b1b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.0887
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852946051450306658, guid: d3d28c250ab424c21946dbe94aa41b1b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.9507
+      objectReference: {fileID: 0}
     - target: {fileID: 9030072370577979181, guid: d3d28c250ab424c21946dbe94aa41b1b, type: 3}
       propertyPath: m_Name
       value: _Playable
       objectReference: {fileID: 0}
     - target: {fileID: 9030072370577979182, guid: d3d28c250ab424c21946dbe94aa41b1b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9030072370577979182, guid: d3d28c250ab424c21946dbe94aa41b1b, type: 3}
       propertyPath: m_LocalPosition.x
