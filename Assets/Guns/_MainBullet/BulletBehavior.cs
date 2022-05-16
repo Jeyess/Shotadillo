@@ -16,7 +16,7 @@ public class BulletBehavior : MonoBehaviour
     private float ExplosionForce;
     private float ExplosionRadius;
     private float ExplosionFalloff;
-
+    public float  ExplosionDMGtoDistance;
     private void Awake()
     {
         guns = Spawner.GetComponent<BulletSpawner>().guns;
@@ -54,7 +54,7 @@ public class BulletBehavior : MonoBehaviour
                         Hit.GetComponent<Rigidbody>().AddForce(Dir * ExplosionForce / (Distance * ExplosionFalloff), ForceMode.Impulse);
                         if (Hit.transform.tag == "Enemy")
                         {
-                            Hit.SendMessage("ApplyDamage", Mathf.RoundToInt(Damage / (Distance * ExplosionFalloff)));
+                            Hit.SendMessage("ApplyDamage", Mathf.RoundToInt(Damage / (Distance*ExplosionDMGtoDistance)));
                         }
                     }
                 }

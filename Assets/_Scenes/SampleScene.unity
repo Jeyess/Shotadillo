@@ -2780,6 +2780,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.9507
       objectReference: {fileID: 0}
+    - target: {fileID: 9030072370288592911, guid: d3d28c250ab424c21946dbe94aa41b1b, type: 3}
+      propertyPath: orthographic size
+      value: 10.9
+      objectReference: {fileID: 0}
     - target: {fileID: 9030072370577979181, guid: d3d28c250ab424c21946dbe94aa41b1b, type: 3}
       propertyPath: m_Name
       value: _Playable

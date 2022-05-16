@@ -17,12 +17,12 @@ MonoBehaviour:
   Speed: 20
   Knockback: 0
   MagSize: 1
-  ReloadTime: 0.2
+  ReloadTime: 0.7
   Timeout: 5
   ShrinkingRate: 1
   BulletCount: 1
   Spread: 0
   ExplosionRadius: 8
-  ExplosionForce: 30
+  ExplosionForce: 19.67
   ExplosiveFalloff: 1
   Color: {fileID: 0}
