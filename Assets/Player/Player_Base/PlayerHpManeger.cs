@@ -25,9 +25,6 @@ public class PlayerHpManeger : MonoBehaviour
         HPDisplay();
         if (_CurrentHP <= 0)
         {
-            gameObject.GetComponent<GunBehavior>().enabled = false;
-            gameObject.GetComponent<SphereCollider>().enabled = false;
-            gameObject.GetComponent<Rigidbody>().isKinematic = true;
             GameObject.Find("Gun").SetActive(false);
             GameObject.Find("Bill").SetActive(false);
             GameObject.Find("StartEnd").GetComponent<StartEnd>().SendMessage("EndScreen");

@@ -69,7 +69,7 @@ public class GameManger : MonoBehaviour
 
     private void WaveTimeout()
     {
-        _EnemyDelta *= 2;
+        _EnemyDelta = Mathf.CeilToInt(_EnemyDelta * 1.25f);
         _Amount = _EnemyDelta;
         _WaveCleared = false;
     }
