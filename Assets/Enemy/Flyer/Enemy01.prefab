@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _CheckRange: 20
-  _TrackSpeed: 2500
+  _TrackSpeed: 1500
   _MoveTimeLimit: 3
   _ObstcleDetectionRange: 1
   _Damage: 10
