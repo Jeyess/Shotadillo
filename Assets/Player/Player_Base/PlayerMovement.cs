@@ -42,10 +42,11 @@ public class PlayerMovement : MonoBehaviour
 
         _GrapplerHook = Resources.Load("GraplingHook/Hook") as GameObject;
         _GrappleLine = Resources.Load("GraplingHook/HookLine") as GameObject;
+    }
 
-        float Ratio = Screen.width / Screen.height;
-        _AimLimitor = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, 0));
-        _AimLimitor = new Vector2(_AimLimitor.x - _AimEdgeLimitor, (_AimLimitor.x / Ratio) - _AimEdgeLimitor);
+    private void Start()
+    {
+        _AimLimitor = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
     }
 
     private void OnEnable()
@@ -88,8 +89,8 @@ public class PlayerMovement : MonoBehaviour
 
         //print(_AimLimitor);
 
-        float CamX = Mathf.Clamp((_Pointer.transform.position.x + transform.position.x) / 2, transform.position.x - _AimLimitor.x, transform.position.x + _AimLimitor.x);
-        float CamY = Mathf.Clamp((_Pointer.transform.position.y + transform.position.y) / 2, transform.position.y - _AimLimitor.y, transform.position.y + _AimLimitor.y);
+        float CamX = Mathf.Clamp((_Pointer.transform.position.x + transform.position.x) / 2, transform.position.x - _AimLimitor.x / 4 + _AimEdgeLimitor, transform.position.x + _AimLimitor.x / 4 - _AimEdgeLimitor);
+        float CamY = Mathf.Clamp((_Pointer.transform.position.y + transform.position.y) / 2, transform.position.y - _AimLimitor.y / 4 +_AimEdgeLimitor, transform.position.y + _AimLimitor.y / 4 - _AimEdgeLimitor);
         _Cam.gameObject.transform.position = new Vector3(CamX, CamY, -10);
     }
 

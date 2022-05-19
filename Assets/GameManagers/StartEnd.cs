@@ -32,7 +32,7 @@ public class StartEnd : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("DEMOTEST");
         Time.timeScale = 1;
     }
 

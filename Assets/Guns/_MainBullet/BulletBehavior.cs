@@ -17,6 +17,8 @@ public class BulletBehavior : MonoBehaviour
     private float ExplosionRadius;
     private float ExplosionFalloff;
 
+    private GameObject mySphere;
+
     private void Awake()
     {
         guns = Spawner.GetComponent<BulletSpawner>().guns;
@@ -41,9 +43,9 @@ public class BulletBehavior : MonoBehaviour
         if (collision.transform.tag == "Enemy" || collision.transform.tag == "Ground")
         {
             rb.velocity = Vector3.zero;
-
             if (IsExplosion)
             {
+                ExplosionDisplay();
                 Collider[] hitColliders = Physics.OverlapSphere(transform.position, ExplosionRadius);
                 foreach(var Hit in hitColliders)
                 {
@@ -64,8 +66,32 @@ public class BulletBehavior : MonoBehaviour
                 collision.SendMessage("ApplyDamage", Damage);
             }
 
-            Spawner.GetComponent<BulletSpawner>().LastBullet();
-            Destroy(gameObject);
+
+            Invoke(nameof(KillGameobjects), 0.1f);
         }
+    }
+
+    private void ExplosionDisplay()
+    {
+        mySphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        mySphere.transform.localScale = Vector3.one * ExplosionRadius * 2;
+        mySphere.transform.position = transform.position + Vector3.back * 3;
+        mySphere.GetComponent<SphereCollider>().enabled = false;
+        Material mat = new Material(Shader.Find("Standard"));
+        mat.SetColor("_Color", new Color(1, 0.5f, 0, 0.5f));
+
+        mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+        mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+        mat.EnableKeyword("_ALPHABLEND_ON");
+        mat.renderQueue = 3000;
+
+        mySphere.GetComponent<MeshRenderer>().material = mat;
+    }
+
+    private void KillGameobjects()
+    {
+        Spawner.GetComponent<BulletSpawner>().LastBullet();
+        Destroy(mySphere);
+        Destroy(gameObject);
     }
 }

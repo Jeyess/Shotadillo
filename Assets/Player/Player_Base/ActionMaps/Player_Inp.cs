@@ -82,7 +82,7 @@ public class @Player_Inp : IInputActionCollection, IDisposable
                 {
                     ""name"": ""up"",
                     ""id"": ""7b2dadaf-bdc9-493e-8139-b39087c82fbf"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

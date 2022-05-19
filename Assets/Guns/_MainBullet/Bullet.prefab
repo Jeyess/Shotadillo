@@ -128,3 +128,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guns: {fileID: 0}
   Spawner: {fileID: 82266522780999698, guid: 3e1b31416516a45de81749cae9f66a9e, type: 3}
+  ExplosionSphere: {fileID: 0}
