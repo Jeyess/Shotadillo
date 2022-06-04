@@ -15,13 +15,13 @@ MonoBehaviour:
   GunID: 1
   Damage: 5
   Speed: 50
-  Knockback: 12
-  MagSize: 4
-  ReloadTime: 1
+  Knockback: 5
+  MagSize: 1
+  ReloadTime: 0
   Timeout: 1
   ShrinkingRate: 1.001
   BulletCount: 5
-  Spread: 20
+  Spread: 21.22
   ExplosionRadius: 0
   ExplosionForce: 0
   ExplosiveFalloff: 0
