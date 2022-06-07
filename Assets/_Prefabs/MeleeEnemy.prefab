@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 5237659279742238550}
   - component: {fileID: 5237659279742238545}
   - component: {fileID: 5237659279742238544}
-  - component: {fileID: 5237659279742238547}
+  - component: {fileID: 9204150080994871697}
   - component: {fileID: -4245595537753577824}
   m_Layer: 0
   m_Name: MeleeEnemy
@@ -145,7 +145,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &5237659279742238547
+--- !u!114 &9204150080994871697
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,11 +154,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5237659279742238546}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5025bcc02afc14a588e7e5f9d50a1da8, type: 3}
+  m_Script: {fileID: 11500000, guid: 832de0d9b94914f9fb2a28654a3b9680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _CheckRange: 20
-  _TrackSpeed: 1200
+  _TrackSpeed: 120
   _MoveTimeLimit: 1.5
   _ObstcleDetectionRange: 1
   _PosChecker: {fileID: 5237659278965864936}

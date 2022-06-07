@@ -76,7 +76,7 @@ public class MeleeAI : MonoBehaviour
             {
                 if (Obstcle.transform == null || Obstcle.transform.tag != "Ground")
                 {
-                    _RB.AddForce(PlayerDirX * _TrackSpeed * Time.deltaTime, ForceMode.Force);
+                    _RB.velocity = PlayerDirX * _TrackSpeed * Time.deltaTime;
                     _InPos = false;
                     _Cycle = 0;
                     _PosChecker.transform.position = transform.position;
@@ -85,7 +85,7 @@ public class MeleeAI : MonoBehaviour
                 {
                     if (_InPos)
                     {
-                        _RB.AddForce((_PosChecker.transform.position - transform.position).normalized * _TrackSpeed * Time.deltaTime, ForceMode.Force);
+                        _RB.velocity = (_PosChecker.transform.position - transform.position).normalized * _TrackSpeed * Time.deltaTime;
                     }
                     else
                     {
@@ -115,7 +115,7 @@ public class MeleeAI : MonoBehaviour
                     Physics.Raycast(transform.position, PlayerDirX, out Obstcle, _ObstcleDetectionRange);
                     if (Obstcle.transform == null || Obstcle.transform.tag != "Ground")
                     {
-                        _RB.AddForce(PlayerDirX * _TrackSpeed * Time.deltaTime, ForceMode.Force);
+                        _RB.velocity = PlayerDirX * _TrackSpeed * Time.deltaTime;
                         _InPos = false;
                         _Cycle = 0;
                         _PosChecker.transform.position = transform.position;
@@ -124,7 +124,7 @@ public class MeleeAI : MonoBehaviour
                     {
                         if (_InPos)
                         {
-                            _RB.AddForce((_PosChecker.transform.position - transform.position).normalized * _TrackSpeed / 1.4f * Time.deltaTime, ForceMode.Force);
+                            _RB.velocity = (_PosChecker.transform.position - transform.position).normalized * _TrackSpeed / 1.4f * Time.deltaTime;
                         }
                         else
                         {
@@ -153,7 +153,7 @@ public class MeleeAI : MonoBehaviour
         if (_MoveTimeout)
         {
             Vector2 Scouting = new Vector2(_RndX, 0);
-            _RB.AddForce(Scouting * _TrackSpeed / 4 * Time.deltaTime, ForceMode.Force);
+            _RB.velocity = Scouting * _TrackSpeed / 4 * Time.deltaTime;
         }
     }
 
@@ -169,6 +169,7 @@ public class MeleeAI : MonoBehaviour
             if (!Physics.CheckSphere(_PosChecker.transform.position, 1, _GroundMask))
             {
                 _InPos = true;
+                _PosChecker.transform.position += Vector3.up;
             }
         }
         _Cycle++;

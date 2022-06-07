@@ -25,10 +25,6 @@ public class PlayerMovement : MonoBehaviour
     private GameObject _Pointer;
     private Vector2 _AimLimitor;
     public float _AimEdgeLimitor;
-    public GameObject _BoundrieBottom;
-    public GameObject _BoundrieTop;
-    public GameObject _BoundrieLeft;
-    public GameObject _BoundrieRight;
 
     private bool _NextToHorizontalBounds;
     private bool _NextToVerticalBounds;
@@ -95,73 +91,6 @@ public class PlayerMovement : MonoBehaviour
 
         float CamX = Mathf.Clamp((_Pointer.transform.position.x + transform.position.x) / 2, transform.position.x - _AimLimitor.x / 4 + _AimEdgeLimitor, transform.position.x + _AimLimitor.x / 4 - _AimEdgeLimitor);
         float CamY = Mathf.Clamp((_Pointer.transform.position.y + transform.position.y) / 2, transform.position.y - _AimLimitor.y / 4 +_AimEdgeLimitor, transform.position.y + _AimLimitor.y / 4 - _AimEdgeLimitor);
-
-
-        float rightBound = (_Cam.WorldToViewportPoint(_BoundrieRight.transform.position) - Vector3.one * 0.5f).x;   // +
-        float leftBound = (_Cam.WorldToViewportPoint(_BoundrieLeft.transform.position) - Vector3.one * 0.5f).x;     // -
-
-        float topBound = (_Cam.WorldToViewportPoint(_BoundrieTop.transform.position) - Vector3.one * 0.5f).y;       // +
-        float bottomBound = (_Cam.WorldToViewportPoint(_BoundrieBottom.transform.position) - Vector3.one * 0.5f).y; // -
-
-        //Right
-        if (rightBound < 0.5f || leftBound > -0.5f)
-        {
-            //print(leftBound);
-            if (!_NextToHorizontalBounds)
-            {
-                if (rightBound < 0.5f)
-                {
-                    CamX -= _Cam.ScreenToWorldPoint(Vector3.one * Screen.width).normalized.x * (0.5f - rightBound);
-                    _NextToHorizontalBounds = true;
-                }
-                else
-                {
-                    CamX -= _Cam.ScreenToWorldPoint(Vector3.one * Screen.width).normalized.x * (-0.5f - leftBound);
-                    _NextToHorizontalBounds = true;
-                }
-            }
-            else
-            {
-                if (rightBound < 0.5f)
-                {
-                    if (CamX < _Cam.transform.position.x)
-                    {
-                        _NextToHorizontalBounds = false;
-                    }
-                    else
-                    {
-                        CamX = _Cam.transform.position.x;
-                        if (_EdgeThreashold > rightBound)
-                        {
-                            print("R_E: " + (_EdgeThreashold - rightBound) + " POS: " +(_Cam.WorldToViewportPoint(_BoundrieRight.transform.position) - Vector3.one * 0.5f).x);    
-                            CamX -= _Cam.ScreenToWorldPoint(Vector3.one * Screen.width).normalized.x * (_EdgeThreashold - rightBound + 0.1f) * 10;
-                            print(_Cam.ScreenToWorldPoint(Vector3.one * Screen.width).normalized.x);
-                        }
-                    }
-                }
-                else if (leftBound > -0.5f)
-                {
-                    if (CamX > _Cam.transform.position.x)
-                    {
-                        _NextToHorizontalBounds = false;
-                    }
-                    else
-                    {
-                        CamX = _Cam.transform.position.x;
-                        if (_EdgeThreashold > -leftBound)
-                        {
-                            print("R_E: " + (-_EdgeThreashold - leftBound) + " POS: " + (_Cam.WorldToViewportPoint(_BoundrieLeft.transform.position) - Vector3.one * 0.5f).x);
-                            CamX -= _Cam.ScreenToWorldPoint(Vector3.one * Screen.width).normalized.x * (-_EdgeThreashold - leftBound - 0.1f) * 2;
-                            print(_Cam.ScreenToWorldPoint(Vector3.one * Screen.width).normalized.x);
-                        }
-                    }
-                }
-            }
-        }
-        //print((_Cam.WorldToViewportPoint(_BoundrieRight.transform.position) - Vector3.one * 0.5f).x);
-        //print((_Cam.WorldToViewportPoint(_BoundrieLeft.transform.position) - Vector3.one * 0.5f).x);
-        //print(_Cam.ScreenToWorldPoint(_BoundrieRight.transform.position));
-        //_Cam.ViewportToWorldPoint()
 
         _Cam.gameObject.transform.position = new Vector3(CamX, CamY, -10);
     }
