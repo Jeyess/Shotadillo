@@ -9,19 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4864bf09dc07d4c7f8d9782c0cfa6735, type: 3}
+  m_Script: {fileID: 11500000, guid: b5615b2f215f8497695668d468155a06, type: 3}
   m_Name: Shotgun
   m_EditorClassIdentifier: 
   GunID: 1
   Damage: 5
   Speed: 50
-  Knockback: 5
-  MagSize: 1
-  ReloadTime: 0
+  Knockback: 12
+  MagSize: 4
+  ReloadTime: 1
   Timeout: 1
   ShrinkingRate: 1.001
   BulletCount: 5
-  Spread: 21.22
+  Spread: 20
   ExplosionRadius: 0
   ExplosionForce: 0
   ExplosiveFalloff: 0

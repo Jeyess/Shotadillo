@@ -9,20 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4864bf09dc07d4c7f8d9782c0cfa6735, type: 3}
+  m_Script: {fileID: 11500000, guid: b5615b2f215f8497695668d468155a06, type: 3}
   m_Name: SlugShot
   m_EditorClassIdentifier: 
   GunID: 2
   Damage: 15
   Speed: 20
   Knockback: 0
-  MagSize: 1
-  ReloadTime: 0.5
+  MagSize: 2
+  ReloadTime: 1
   Timeout: 5
   ShrinkingRate: 1
   BulletCount: 1
   Spread: 0
-  ExplosionRadius: 6.5
-  ExplosionForce: 12
+  ExplosionRadius: 5
+  ExplosionForce: 30
   ExplosiveFalloff: 1
   Color: {fileID: 0}
