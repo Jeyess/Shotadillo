@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -52,11 +53,17 @@ public class PlayerMovement : MonoBehaviour
     private void OnEnable()
     {
         _Input.Enable();
+        _Input.Inp.Grapple.started += GrappleIO;
+        _Input.Inp.Grapple.performed += GrappleIO;
+        _Input.Inp.Grapple.canceled += GrappleIO;
     }
 
     private void OnDisable()
     {
         _Input.Disable();
+        _Input.Inp.Grapple.started -= GrappleIO;
+        _Input.Inp.Grapple.performed -= GrappleIO;
+        _Input.Inp.Grapple.canceled -= GrappleIO;
     }
 
 
@@ -101,8 +108,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Grappling();
         GroundCheck();
+        Grappling();
     }
 
 
@@ -136,30 +143,34 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    //
-    private void Grappling()
+    private void GrappleIO(InputAction.CallbackContext context)
     {
         RaycastHit Hit;
-        if (_Input.Inp.Grapple.triggered && !_Grapling)
+        if (context.performed && !_Grapling)
         {
             Physics.Raycast(transform.position, _Gun.transform.TransformDirection(Vector3.up), out Hit, 1000f, LayerMask.GetMask("Grappble"));
             //print(Hit.transform);
-            if(Hit.transform != null)
+            if (Hit.transform != null)
             {
                 Instantiate(_GrapplerHook, Hit.point, transform.rotation);
                 _GrappleHitLength = Vector2.Distance(GameObject.Find("Hook(Clone)").transform.position, transform.position);
-                _GrappleHitLength += 0.01f; 
+                _GrappleHitLength += 0.01f;
                 Instantiate(_GrappleLine, new Vector3(GameObject.Find("Hook(Clone)").transform.position.x, GameObject.Find("Hook(Clone)").transform.position.y, 1), Quaternion.identity);
                 _Grapling = true;
             }
         }
-        else if (_Input.Inp.Grapple.triggered && _Grapling)
+        else
         {
             Destroy(GameObject.Find("Hook(Clone)"));
             Destroy(GameObject.Find("HookLine(Clone)"));
             _Grapling = false;
         }
+    }
 
+
+    //
+    private void Grappling()
+    {
         if (_Grapling)
         {
             GameObject.Find("HookLine(Clone)").transform.rotation = Quaternion.FromToRotation(Vector2.up, GameObject.Find("Hook(Clone)").transform.position - transform.position);
@@ -175,5 +186,6 @@ public class PlayerMovement : MonoBehaviour
             }
             transform.position = new Vector3(GameObject.Find("HookLineEnd").transform.position.x, GameObject.Find("HookLineEnd").transform.position.y, 0);
         }
+        
     }
 }

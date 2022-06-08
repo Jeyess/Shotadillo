@@ -24,6 +24,7 @@ public class MeleeAI : MonoBehaviour
     private LayerMask _GroundMask;
 
     public GameObject _PosChecker;
+    private Vector3 _CheckerFixedPos;
     private bool _InPos = false;
     private int _Cycle = 0;
 
@@ -71,12 +72,13 @@ public class MeleeAI : MonoBehaviour
             _PlayerLastPos = _Player.transform.position;
             RaycastHit Obstcle;
             Vector2 PlayerDirX = new Vector2(PlayerDir.x, 0).normalized;
-            Physics.Raycast(transform.position, PlayerDirX, out Obstcle, _ObstcleDetectionRange);
+            Physics.Raycast(transform.position + Vector3.down * transform.localScale.y / 2, PlayerDirX, out Obstcle, _ObstcleDetectionRange);
+            print(transform.position + " EEE " + (transform.position - Vector3.down * transform.localScale.y / 2));
             if (Physics.CheckSphere(transform.position, 1, _GroundMask))
             {
                 if (Obstcle.transform == null || Obstcle.transform.tag != "Ground")
                 {
-                    _RB.velocity = PlayerDirX * _TrackSpeed * Time.deltaTime;
+                    _RB.velocity = PlayerDirX * _TrackSpeed * Time.deltaTime + Vector2.up * _RB.velocity.y;
                     _InPos = false;
                     _Cycle = 0;
                     _PosChecker.transform.position = transform.position;
@@ -85,11 +87,13 @@ public class MeleeAI : MonoBehaviour
                 {
                     if (_InPos)
                     {
-                        _RB.velocity = (_PosChecker.transform.position - transform.position).normalized * _TrackSpeed * Time.deltaTime;
+                        _RB.velocity = Vector3.up * ((_PosChecker.transform.position - transform.position).normalized.y + 1) * _TrackSpeed / 2 * Time.deltaTime;
+                        _PosChecker.transform.position = _CheckerFixedPos;
                     }
                     else
                     {
                         HeightCheck(PlayerDirX);
+                        _CheckerFixedPos = _PosChecker.transform.position;
                     }
                 }
             }
@@ -112,10 +116,10 @@ public class MeleeAI : MonoBehaviour
                     //print(PlayerDir);
                     RaycastHit Obstcle;
                     Vector2 PlayerDirX = new Vector2(PlayerDir.x, 0).normalized;
-                    Physics.Raycast(transform.position, PlayerDirX, out Obstcle, _ObstcleDetectionRange);
+                    Physics.Raycast(transform.position + Vector3.down * transform.localScale.y / 2, PlayerDirX, out Obstcle, _ObstcleDetectionRange);
                     if (Obstcle.transform == null || Obstcle.transform.tag != "Ground")
                     {
-                        _RB.velocity = PlayerDirX * _TrackSpeed * Time.deltaTime;
+                        _RB.velocity = PlayerDirX * _TrackSpeed * Time.deltaTime + Vector2.up * _RB.velocity.y;
                         _InPos = false;
                         _Cycle = 0;
                         _PosChecker.transform.position = transform.position;
@@ -124,11 +128,13 @@ public class MeleeAI : MonoBehaviour
                     {
                         if (_InPos)
                         {
-                            _RB.velocity = (_PosChecker.transform.position - transform.position).normalized * _TrackSpeed / 1.4f * Time.deltaTime;
+                            _RB.velocity = Vector3.up * ((_PosChecker.transform.position - transform.position).normalized.y + 1) * _TrackSpeed / 2 * Time.deltaTime;
+                            _PosChecker.transform.position = _CheckerFixedPos;
                         }
                         else
                         {
                             HeightCheck(PlayerDirX);
+                            _CheckerFixedPos = _PosChecker.transform.position;
                         }
                     }
                 }
@@ -153,7 +159,7 @@ public class MeleeAI : MonoBehaviour
         if (_MoveTimeout)
         {
             Vector2 Scouting = new Vector2(_RndX, 0);
-            _RB.velocity = Scouting * _TrackSpeed / 4 * Time.deltaTime;
+            _RB.velocity = Scouting * _TrackSpeed / 4 * Time.deltaTime + Vector2.up * _RB.velocity.y;
         }
     }
 

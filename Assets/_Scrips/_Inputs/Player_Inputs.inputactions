@@ -51,6 +51,14 @@
                     "id": "f31d687c-542a-4c6a-9013-ad306f6ed9ba",
                     "expectedControlType": "Button",
                     "processors": "",
+                    "interactions": "Hold(duration=0.1,pressPoint=0.05)"
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "a3c63c65-9e9c-4c53-abb4-0de3c47f7f4d",
+                    "expectedControlType": "Button",
+                    "processors": "",
                     "interactions": ""
                 }
             ],
@@ -217,6 +225,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Grapple",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cf6b0698-92cf-4802-851f-3a8f8f1888a4",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
