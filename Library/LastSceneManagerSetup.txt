@@ -1,6 +1,10 @@
 sceneSetups:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - path: Assets/_Scenes/Level 1.unity
+=======
+- path: Assets/_Scenes/Demo 1.unity
+>>>>>>> Stashed changes
 =======
 - path: Assets/_Scenes/Demo 1.unity
 >>>>>>> Stashed changes

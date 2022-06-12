@@ -1,7 +1,11 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_FilePath: C:/UnityProjects2/Shotadillo/Packages/manifest.json
+=======
+    m_FilePath: D:/GitHub/Shotadillo/Packages/manifest.json
+>>>>>>> Stashed changes
 =======
     m_FilePath: D:/GitHub/Shotadillo/Packages/manifest.json
 >>>>>>> Stashed changes
@@ -9,6 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       ticks: 637895015203939845
     m_Hash: 2075251007
@@ -20,13 +25,24 @@ m_ProjectFiles:
   m_LockFileStatus:
     m_FilePath: D:/GitHub/Shotadillo/Packages/packages-lock.json
 >>>>>>> Stashed changes
+=======
+      ticks: 637884163110379374
+    m_Hash: 4065942300
+  m_LockFileStatus:
+    m_FilePath: D:/GitHub/Shotadillo/Packages/packages-lock.json
+>>>>>>> Stashed changes
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       ticks: 637895015204009859
     m_Hash: 4266425764
+=======
+      ticks: 637884163110379374
+    m_Hash: 373747795
+>>>>>>> Stashed changes
 =======
       ticks: 637884163110379374
     m_Hash: 373747795
@@ -42,7 +58,11 @@ m_PackageAssets:
       version: 2.6.11
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.cinemachine@2.6.11
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.cinemachine@2.6.11
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.cinemachine@2.6.11
 >>>>>>> Stashed changes
@@ -211,7 +231,11 @@ m_PackageAssets:
       version: 1.15.1
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.collab-proxy@1.15.1
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.collab-proxy@1.15.1
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.collab-proxy@1.15.1
 >>>>>>> Stashed changes
@@ -363,7 +387,11 @@ m_PackageAssets:
       version: 2.0.7
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.ide.rider@2.0.7
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.ide.rider@2.0.7
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.ide.rider@2.0.7
 >>>>>>> Stashed changes
@@ -484,7 +512,11 @@ m_PackageAssets:
       version: 2.0.15
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.ide.visualstudio@2.0.15
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.ide.visualstudio@2.0.15
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.ide.visualstudio@2.0.15
 >>>>>>> Stashed changes
@@ -581,7 +613,11 @@ m_PackageAssets:
       version: 1.2.5
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.ide.vscode@1.2.5
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.ide.vscode@1.2.5
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.ide.vscode@1.2.5
 >>>>>>> Stashed changes
@@ -658,7 +694,11 @@ m_PackageAssets:
       version: 1.0.2
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.inputsystem@1.0.2
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.inputsystem@1.0.2
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.inputsystem@1.0.2
 >>>>>>> Stashed changes
@@ -780,7 +820,11 @@ m_PackageAssets:
       version: 10.7.0
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.render-pipelines.universal@10.7.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.render-pipelines.universal@10.7.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.render-pipelines.universal@10.7.0
 >>>>>>> Stashed changes
@@ -909,7 +953,11 @@ m_PackageAssets:
       version: 1.1.31
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.test-framework@1.1.31
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.test-framework@1.1.31
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.test-framework@1.1.31
 >>>>>>> Stashed changes
@@ -1014,7 +1062,11 @@ m_PackageAssets:
       version: 3.0.6
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.textmeshpro@3.0.6
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.textmeshpro@3.0.6
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.textmeshpro@3.0.6
 >>>>>>> Stashed changes
@@ -1184,7 +1236,11 @@ m_PackageAssets:
       version: 1.4.8
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.timeline@1.4.8
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.timeline@1.4.8
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.timeline@1.4.8
 >>>>>>> Stashed changes
@@ -1354,7 +1410,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.ugui@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.ugui@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.ugui@1.0.0
 >>>>>>> Stashed changes
@@ -1421,7 +1481,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.ai@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.ai@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.ai@1.0.0
 >>>>>>> Stashed changes
@@ -1473,7 +1537,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.androidjni@1.0.0
 >>>>>>> Stashed changes
@@ -1525,7 +1593,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.animation@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.animation@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.animation@1.0.0
 >>>>>>> Stashed changes
@@ -1577,7 +1649,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
 >>>>>>> Stashed changes
@@ -1629,7 +1705,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.audio@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.audio@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.audio@1.0.0
 >>>>>>> Stashed changes
@@ -1681,7 +1761,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.cloth@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.cloth@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.cloth@1.0.0
 >>>>>>> Stashed changes
@@ -1737,7 +1821,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.director@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.director@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.director@1.0.0
 >>>>>>> Stashed changes
@@ -1797,7 +1885,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
 >>>>>>> Stashed changes
@@ -1850,7 +1942,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.imgui@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.imgui@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.imgui@1.0.0
 >>>>>>> Stashed changes
@@ -1902,7 +1998,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
 >>>>>>> Stashed changes
@@ -1954,7 +2054,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
 >>>>>>> Stashed changes
@@ -2006,7 +2110,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.physics@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.physics@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.physics@1.0.0
 >>>>>>> Stashed changes
@@ -2058,7 +2166,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.physics2d@1.0.0
 >>>>>>> Stashed changes
@@ -2110,7 +2222,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.screencapture@1.0.0
 >>>>>>> Stashed changes
@@ -2166,7 +2282,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.terrain@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.terrain@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.terrain@1.0.0
 >>>>>>> Stashed changes
@@ -2218,7 +2338,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
 >>>>>>> Stashed changes
@@ -2278,7 +2402,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.tilemap@1.0.0
 >>>>>>> Stashed changes
@@ -2334,7 +2462,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.ui@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.ui@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.ui@1.0.0
 >>>>>>> Stashed changes
@@ -2386,7 +2518,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.uielements@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.uielements@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.uielements@1.0.0
 >>>>>>> Stashed changes
@@ -2454,7 +2590,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.umbra@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.umbra@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.umbra@1.0.0
 >>>>>>> Stashed changes
@@ -2506,7 +2646,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
 >>>>>>> Stashed changes
@@ -2566,7 +2710,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
 >>>>>>> Stashed changes
@@ -2618,7 +2766,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
 >>>>>>> Stashed changes
@@ -2678,7 +2830,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
 >>>>>>> Stashed changes
@@ -2738,7 +2894,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
 >>>>>>> Stashed changes
@@ -2798,7 +2958,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
 >>>>>>> Stashed changes
@@ -2874,7 +3038,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.vehicles@1.0.0
 >>>>>>> Stashed changes
@@ -2930,7 +3098,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.video@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.video@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.video@1.0.0
 >>>>>>> Stashed changes
@@ -2994,7 +3166,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.vr@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.vr@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.vr@1.0.0
 >>>>>>> Stashed changes
@@ -3060,7 +3236,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.wind@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.wind@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.wind@1.0.0
 >>>>>>> Stashed changes
@@ -3112,7 +3292,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.xr@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.xr@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.xr@1.0.0
 >>>>>>> Stashed changes
@@ -3176,7 +3360,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.subsystems@1.0.0
 >>>>>>> Stashed changes
@@ -3232,7 +3420,11 @@ m_PackageAssets:
       version: 1.0.0
       source: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
 >>>>>>> Stashed changes
@@ -3295,7 +3487,11 @@ m_PackageAssets:
       version: 1.0.6
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.ext.nunit@1.0.6
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.ext.nunit@1.0.6
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.ext.nunit@1.0.6
 >>>>>>> Stashed changes
@@ -3362,7 +3558,11 @@ m_PackageAssets:
       version: 1.1.0
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.mathematics@1.1.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.mathematics@1.1.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.mathematics@1.1.0
 >>>>>>> Stashed changes
@@ -3447,7 +3647,11 @@ m_PackageAssets:
       version: 10.7.0
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.render-pipelines.core@10.7.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.render-pipelines.core@10.7.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.render-pipelines.core@10.7.0
 >>>>>>> Stashed changes
@@ -3618,7 +3822,11 @@ m_PackageAssets:
       version: 10.7.0
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.shadergraph@10.7.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.shadergraph@10.7.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.shadergraph@10.7.0
 >>>>>>> Stashed changes
@@ -3788,7 +3996,11 @@ m_PackageAssets:
       version: 2.0.0
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0
 >>>>>>> Stashed changes
@@ -3868,7 +4080,11 @@ m_PackageAssets:
       version: 1.0.1
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.services.core@1.0.1
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.services.core@1.0.1
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.services.core@1.0.1
 >>>>>>> Stashed changes
@@ -3949,7 +4165,11 @@ m_PackageAssets:
       version: 4.3.2
       source: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       resolvedPath: C:\UnityProjects2\Shotadillo\Library\PackageCache\com.unity.searcher@4.3.2
+=======
+      resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.searcher@4.3.2
+>>>>>>> Stashed changes
 =======
       resolvedPath: D:\GitHub\Shotadillo\Library\PackageCache\com.unity.searcher@4.3.2
 >>>>>>> Stashed changes
@@ -3975,6 +4195,9 @@ m_PackageAssets:
         - 4.7.0-preview
         - 4.9.1
         - 4.9.2
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         compatible:
         - 4.3.2
@@ -3984,6 +4207,9 @@ m_PackageAssets:
         - 4.7.0-preview
         - 4.9.1
         - 4.9.2
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         verified: 4.3.2
       dependencies: []
@@ -4014,7 +4240,11 @@ m_PackageAssets:
   m_LocalPackages:
     m_LocalFileStatus: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 m_ProjectPath: C:/UnityProjects2/Shotadillo/Packages
+=======
+m_ProjectPath: D:/GitHub/Shotadillo/Packages
+>>>>>>> Stashed changes
 =======
 m_ProjectPath: D:/GitHub/Shotadillo/Packages
 >>>>>>> Stashed changes
