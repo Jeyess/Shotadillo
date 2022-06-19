@@ -1099,12 +1099,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3890060704794323674, guid: 104b33ba5f99b4c11849640b22c39f92, type: 3}
       propertyPath: _Spawning
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3890060704794323674, guid: 104b33ba5f99b4c11849640b22c39f92, type: 3}
       propertyPath: _EnemyToSpawn
       value: 
       objectReference: {fileID: 4145813145556695991, guid: eadfe83804ec543af9417bbf1b5aa56a, type: 3}
+    - target: {fileID: 3890060704794323674, guid: 104b33ba5f99b4c11849640b22c39f92, type: 3}
+      propertyPath: _NextWaveTimer
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 3890060705190505347, guid: 104b33ba5f99b4c11849640b22c39f92, type: 3}
       propertyPath: _Quit
       value: 

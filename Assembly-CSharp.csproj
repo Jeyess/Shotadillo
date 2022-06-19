@@ -63,6 +63,7 @@
     <Compile Include="Assets/_Scrips/LineCol.cs" />
     <Compile Include="Assets/_Scrips/FollowPlayer.cs" />
     <Compile Include="Assets/_Scrips/GameManger.cs" />
+    <Compile Include="Assets/_Scrips/_SpecialEffects/Airburst.cs" />
     <Compile Include="Assets/_Scrips/StartEnd.cs" />
     <Compile Include="Assets/_Scrips/_ScriptableObjects/Gun.cs" />
     <Compile Include="Assets/_Scrips/PlayerHpManeger.cs" />
@@ -75,7 +76,6 @@
     <Compile Include="Assets/_Scrips/_Inputs/Player_Input.cs" />
     <Compile Include="Assets/_Scrips/BulletBehavior.cs" />
     <Compile Include="Assets/_Scrips/EnemyAI.cs" />
-    <Compile Include="Assets/_Scrips/_SpecialEffects/Airburst.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

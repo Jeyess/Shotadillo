@@ -12,7 +12,10 @@ public class GameManger : MonoBehaviour
     public bool _Spawning;
     public int _Amount;
     public float _EnemyAmountMultiplier;
-    public float _NextWaveTimer;
+
+    public int _NextWaveTimer;
+    private float _TimerDelta;
+    private bool _ResetTimer = false;
 
     private int _EnemyDelta = 1;
     private bool _WaveCleared = false;
@@ -21,6 +24,7 @@ public class GameManger : MonoBehaviour
     private void Awake()
     {
         _EnemyDelta = _Amount;
+        WaveTimeout();
     }
 
     // Update is called once per frame
@@ -53,14 +57,27 @@ public class GameManger : MonoBehaviour
         Gizmos.DrawCube(new Vector2(_SpawnPointX, _SpawnPointY), new Vector2(_SpawnRadius, _SpawnRadius));
     }
 
-
+    private void WaveTimer()
+    {
+        if (_TimerDelta > 0 && !_ResetTimer)
+        {
+            print(_TimerDelta);
+            _TimerDelta--;
+            Invoke(nameof(WaveTimer), 1f);
+        }
+        else
+        {
+            _ResetTimer = true;
+            WaveTimeout();
+        }
+    }
 
     private void OnEnemyClear()
     {
         if (GameObject.Find("Enemies").transform.childCount == 0 && !_WaveCleared)
         {
             _WaveCleared = true;
-            Invoke(nameof(WaveTimeout), 3);
+            Invoke(nameof(WaveTimeout), 0);
         }
     }
 
@@ -69,5 +86,8 @@ public class GameManger : MonoBehaviour
         _Amount = Mathf.CeilToInt(_Amount * _EnemyAmountMultiplier);
         _EnemyDelta = _Amount;
         _WaveCleared = false;
+        _TimerDelta = _NextWaveTimer;
+        _ResetTimer = false;
+        Invoke(nameof(WaveTimer), 1.5f);
     }
 }
