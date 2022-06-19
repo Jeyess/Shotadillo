@@ -5,13 +5,14 @@ using UnityEngine;
 public class GameManger : MonoBehaviour
 {
     private GameObject _EnemySpawner;
-    public GameObject _EnemySpawnerType1;
-    public GameObject _EnemySpawnerType2;
+    public GameObject _EnemyToSpawn;
     public float _SpawnRadius;
     public float _SpawnPointX;
     public float _SpawnPointY;
     public bool _Spawning;
     public int _Amount;
+    public float _EnemyAmountMultiplier;
+    public float _NextWaveTimer;
 
     private int _EnemyDelta = 1;
     private bool _WaveCleared = false;
@@ -19,7 +20,7 @@ public class GameManger : MonoBehaviour
 
     private void Awake()
     {
-        _Amount = _EnemyDelta;
+        _EnemyDelta = _Amount;
     }
 
     // Update is called once per frame
@@ -33,16 +34,12 @@ public class GameManger : MonoBehaviour
 
     private void Spawning()
     {
-        if (_Spawning && _Amount > 0)
+        if (_Spawning && _EnemyDelta > 0)
         {
-            int rnd = Random.Range(1, 4);
-            if (rnd == 1)
-                _EnemySpawner = _EnemySpawnerType1;
-            else
-                _EnemySpawner = _EnemySpawnerType2;
+            _EnemySpawner = _EnemyToSpawn;
             Vector2 SpawnPos = new Vector2(Random.Range(_SpawnPointX + _SpawnRadius / 2, _SpawnPointX - _SpawnRadius / 2), Random.Range(_SpawnPointY + _SpawnRadius / 2, _SpawnPointY - _SpawnRadius / 2));
             Instantiate(_EnemySpawner, SpawnPos, Quaternion.identity).transform.SetParent(GameObject.Find("Enemies").transform);
-            _Amount--;
+            _EnemyDelta--;
         }
     }
 
@@ -69,8 +66,8 @@ public class GameManger : MonoBehaviour
 
     private void WaveTimeout()
     {
-        _EnemyDelta = Mathf.CeilToInt(_EnemyDelta * 1.25f);
-        _Amount = _EnemyDelta;
+        _Amount = Mathf.CeilToInt(_Amount * _EnemyAmountMultiplier);
+        _EnemyDelta = _Amount;
         _WaveCleared = false;
     }
 }

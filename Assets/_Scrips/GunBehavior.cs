@@ -13,19 +13,16 @@ public class GunBehavior : MonoBehaviour
     private Rigidbody _PlayerRB;
     private GameObject _Pointer;
 
-
     private int _AmmoLeft;
     private bool _Reloading;
     private int _MagSize;
     private float _ReloadTime;
     private float _ShotKnockback;
     
-
     Vector3 PointerPos;
 
 
-    private GameObject _Text;
-
+    #region SETUP
     private void Awake()
     {
         _Input = new Player_Inp();
@@ -44,10 +41,6 @@ public class GunBehavior : MonoBehaviour
         _ReloadTime = _BulletSpawner.GetComponent<BulletSpawner>().guns.ReloadTime;
 
         _ShotKnockback = _BulletSpawner.GetComponent<BulletSpawner>().guns.Knockback;
-
-        _Text = GameObject.Find("AmmoText");
-
-        AmmoDisplayer();
     }
 
     private void OnEnable()
@@ -59,9 +52,7 @@ public class GunBehavior : MonoBehaviour
     {
         _Input.Disable();
     }
-
-
-    
+    #endregion 
 
 
     // Update is called once per frame
@@ -76,7 +67,6 @@ public class GunBehavior : MonoBehaviour
     }
 
 
-
     private void GunPositioning()
     {
         _Gun.transform.position = new Vector3(transform.position.x, transform.position.y, -1);
@@ -84,7 +74,7 @@ public class GunBehavior : MonoBehaviour
     }
 
 
-
+    #region GunBaseMechanics
     //Summons the bullets prefab when triggred and ammo is more then 0
     private void Fire()
     {
@@ -94,11 +84,8 @@ public class GunBehavior : MonoBehaviour
             Instantiate(_BulletSpawner, transform.position, _Gun.transform.rotation);
             _PlayerRB.AddForce(_ShotKnockback * (transform.position - PointerPos).normalized, ForceMode.Impulse);
             _AmmoLeft--;
-            AmmoDisplayer();
         }
     }
-
-
 
     //Reloading will happen when reload is triggered ammo reaches 0 and only if it's not already reloading
     private void Reload()
@@ -109,34 +96,16 @@ public class GunBehavior : MonoBehaviour
             _AmmoLeft = 0;
             _Reloading = true;
             Invoke("ReloadTimer", _ReloadTime);
-            Invoke("AmmoDisplayer", _ReloadTime / (_MagSize - _AmmoLeft + 1));
         }
     }
-
-
-    private void AmmoDisplayer()
-    {
-        if (_Reloading && _AmmoLeft != _MagSize)
-        {
-            _Text.GetComponent<Text>().text += "-";            
-            Invoke("AmmoDisplayer", _ReloadTime / (_MagSize - _AmmoLeft + 1));
-        }
-        else
-        {
-            string AmmoDesplayer = new string('|', (_AmmoLeft));
-            _Text.GetComponent<Text>().text = "Ammo " + AmmoDesplayer;
-        }
-    }
-
 
     //Reloading timeout
     private void ReloadTimer()
     {
         _Reloading = false;
         _AmmoLeft = _MagSize;
-        AmmoDisplayer();
     }
-
+    #endregion
 
 
     //Weapon switching
@@ -159,8 +128,6 @@ public class GunBehavior : MonoBehaviour
             _ReloadTime = _BulletSpawner.GetComponent<BulletSpawner>().guns.ReloadTime;
             
             _ShotKnockback = _BulletSpawner.GetComponent<BulletSpawner>().guns.Knockback;
-
-            AmmoDisplayer();
         }
     }
 }

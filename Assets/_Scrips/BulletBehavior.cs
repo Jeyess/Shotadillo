@@ -77,7 +77,7 @@ public class BulletBehavior : MonoBehaviour
         mySphere.transform.localScale = Vector3.one * ExplosionRadius * 2;
         mySphere.transform.position = transform.position + Vector3.back * 3;
         mySphere.GetComponent<SphereCollider>().enabled = false;
-        Material mat = new Material(Shader.Find("Standard"));
+        Material mat = new Material(Shader.Find("UI/Default"));
         mat.SetColor("_Color", new Color(1, 0.5f, 0, 0.5f));
 
         mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);

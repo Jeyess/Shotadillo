@@ -73,8 +73,13 @@ public class MeleeAI : MonoBehaviour
             RaycastHit Obstcle;
             Vector2 PlayerDirX = new Vector2(PlayerDir.x, 0).normalized;
             Physics.Raycast(transform.position + Vector3.down * transform.localScale.y / 2, PlayerDirX, out Obstcle, _ObstcleDetectionRange);
+<<<<<<< Updated upstream
             print(transform.position + " EEE " + (transform.position - Vector3.down * transform.localScale.y / 2));
             if (Physics.CheckSphere(transform.position, 1, _GroundMask))
+=======
+            //print(transform.position + " EEE " + (transform.position - Vector3.down * transform.localScale.y / 2));
+            //if (Physics.CheckSphere(transform.position, 1, _GroundMask))
+>>>>>>> Stashed changes
             {
                 if (Obstcle.transform == null || Obstcle.transform.tag != "Ground")
                 {

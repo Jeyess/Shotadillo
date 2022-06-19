@@ -6,7 +6,9 @@ public class FollowPlayer : MonoBehaviour
 {
     private GameObject _Player;
     private GameObject _Pointer;
+    private GameObject _GunMesh;
     private float _MeshScale;
+    private float _GunMeshScale;
     private bool _PlayerDirRight;
 
     // Start is called before the first frame update
@@ -14,7 +16,9 @@ public class FollowPlayer : MonoBehaviour
     {
         _Player = GameObject.Find("Player");
         _Pointer = GameObject.Find("AimPointer");
+        _GunMesh = GameObject.Find("Shotgun");
         _MeshScale = gameObject.transform.localScale.z;
+        _GunMeshScale = _GunMesh.transform.localScale.x;
     }
 
     // Update is called once per frame
@@ -39,10 +43,12 @@ public class FollowPlayer : MonoBehaviour
         if (_PlayerDirRight)
         {
             transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, _MeshScale);
+            _GunMesh.transform.localScale = new Vector3(_GunMeshScale, _GunMesh.transform.localScale.y, _GunMesh.transform.localScale.z);
         }
         else
         {
             transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, -_MeshScale);
+            _GunMesh.transform.localScale = new Vector3(-_GunMeshScale, _GunMesh.transform.localScale.y, _GunMesh.transform.localScale.z);
         }
     }
 }

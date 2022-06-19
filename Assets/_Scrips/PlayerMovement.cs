@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private GameObject _Gun;
 
     public bool _Grapling;
+    public float _GrappleDistanceLimit;
     private float _GrappleHitLength;
     private float _GrappleLength;
 
@@ -148,7 +149,7 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit Hit;
         if (context.performed && !_Grapling)
         {
-            Physics.Raycast(transform.position, _Gun.transform.TransformDirection(Vector3.up), out Hit, 1000f, LayerMask.GetMask("Grappble"));
+            Physics.Raycast(transform.position, _Gun.transform.TransformDirection(Vector3.up), out Hit, _GrappleDistanceLimit, LayerMask.GetMask("Grappble"));
             //print(Hit.transform);
             if (Hit.transform != null)
             {

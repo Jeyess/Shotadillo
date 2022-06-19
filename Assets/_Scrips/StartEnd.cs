@@ -9,6 +9,10 @@ public class StartEnd : MonoBehaviour
     public Button _Restart;
     public Button _Quit;
     private GameObject _Canvas;
+<<<<<<< Updated upstream
+=======
+    private GameObject _Player;
+>>>>>>> Stashed changes
     private Scene _Scene;
 
     private float _Score;
@@ -17,6 +21,10 @@ public class StartEnd : MonoBehaviour
     {
         _Canvas = GameObject.Find("EndCanvas");
         _Scene = SceneManager.GetActiveScene();
+<<<<<<< Updated upstream
+=======
+        _Player = GameObject.Find("Player");
+>>>>>>> Stashed changes
     }
 
     public void AddScore()
@@ -27,7 +35,9 @@ public class StartEnd : MonoBehaviour
 
     public void EndScreen()
     {
+        _Player.GetComponent<Collider>().enabled = false;
         Time.timeScale = 0;
+        Cursor.visible = true;
         _Canvas.GetComponent<Canvas>().enabled = true;
         GameObject.Find("Score").GetComponent<Text>().text = "Score : " + _Score;
         _Restart.onClick.AddListener(Restart);

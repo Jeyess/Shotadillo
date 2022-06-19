@@ -24,4 +24,5 @@ public class Gun : ScriptableObject
     public float ExplosiveFalloff;
 
     public Material Color;
+    public Mesh GunMesh;
 }

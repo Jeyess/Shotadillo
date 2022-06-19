@@ -5,7 +5,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 637901945380000000
+=======
+      ticks: 637903098570000000
+>>>>>>> Stashed changes
     m_Hash: 2075251007
   m_LockFileStatus:
     m_FilePath: /Users/Jeyess/Desktop/_Projects/Shotadillo/Packages/packages-lock.json
@@ -13,7 +17,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 637901945380000000
+=======
+      ticks: 637903098570000000
+>>>>>>> Stashed changes
     m_Hash: 4266425764
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -3761,6 +3769,10 @@ m_PackageAssets:
         - 4.6.0-preview
         - 4.7.0-preview
         - 4.9.1
+<<<<<<< Updated upstream
+=======
+        - 4.9.2
+>>>>>>> Stashed changes
         compatible:
         - 4.0.0-preview
         - 4.0.0
@@ -3777,6 +3789,10 @@ m_PackageAssets:
         - 4.6.0-preview
         - 4.7.0-preview
         - 4.9.1
+<<<<<<< Updated upstream
+=======
+        - 4.9.2
+>>>>>>> Stashed changes
         verified: 4.3.2
       dependencies: []
       resolvedDependencies: []

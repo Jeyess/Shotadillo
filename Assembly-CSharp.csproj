@@ -66,6 +66,10 @@
     <Compile Include="Assets/_Scrips/_ScriptableObjects/Gun.cs" />
     <Compile Include="Assets/_Scrips/PlayerHpManeger.cs" />
     <Compile Include="Assets/_Scrips/GunBehavior.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets/_Scrips/EnemyShowPosition.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets/_Scrips/GHook.cs" />
     <Compile Include="Assets/_Scrips/PlayerMovement.cs" />
     <Compile Include="Assets/_Scrips/HpManager.cs" />
@@ -73,6 +77,10 @@
     <Compile Include="Assets/_Scrips/_Inputs/Player_Input.cs" />
     <Compile Include="Assets/_Scrips/BulletBehavior.cs" />
     <Compile Include="Assets/_Scrips/EnemyAI.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets/_Scrips/EnemyPointers.cs" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
