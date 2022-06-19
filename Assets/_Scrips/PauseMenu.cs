@@ -24,11 +24,7 @@ public class PauseMenu : MonoBehaviour
         _Resume = GameObject.Find("RESUME").GetComponent<Button>();
         _Restart = GameObject.Find("RESTART").GetComponent<Button>();
         _Quit = GameObject.Find("QUIT").GetComponent<Button>();
-<<<<<<< Updated upstream
-        print(_Restart);
-=======
         Cursor.visible = false;
->>>>>>> Stashed changes
     }
 
     private void OnEnable()
@@ -54,17 +50,10 @@ public class PauseMenu : MonoBehaviour
         {
             if (!_MenuActive)
             {
-<<<<<<< Updated upstream
-                _MenuActive = true;
-                _Canvas.GetComponent<Canvas>().enabled = true;
-                Time.timeScale = 0;
-                print(_Restart);
-=======
                 Cursor.visible = true;
                 _MenuActive = true;
                 _Canvas.GetComponent<Canvas>().enabled = true;
                 Time.timeScale = 0;
->>>>>>> Stashed changes
                 _Resume.onClick.AddListener(Resume);
                 _Restart.onClick.AddListener(Restart);
                 _Quit.onClick.AddListener(Quit);
@@ -78,10 +67,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-<<<<<<< Updated upstream
-=======
         Cursor.visible = false;
->>>>>>> Stashed changes
         _MenuActive = false;
         Time.timeScale = 1;
         _Canvas.GetComponent<Canvas>().enabled = false;

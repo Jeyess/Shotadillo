@@ -38,6 +38,7 @@ public class BulletBehavior : MonoBehaviour
         }
     }
 
+
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.transform.tag == "Enemy" || collision.transform.tag == "Ground")
@@ -45,36 +46,44 @@ public class BulletBehavior : MonoBehaviour
             rb.velocity = Vector3.zero;
             if (IsExplosion)
             {
-                ExplosionDisplay();
-                Collider[] hitColliders = Physics.OverlapSphere(transform.position, ExplosionRadius);
-                foreach(var Hit in hitColliders)
-                {
-                    if (Hit.transform.tag == "Player" || Hit.transform.tag == "Enemy")
-                    {
-                        Vector2 Dir = Hit.transform.position - transform.position;
-                        float Distance = Vector2.Distance(Hit.transform.position, transform.position);
-                        Hit.GetComponent<Rigidbody>().AddForce(Dir * ExplosionForce / (Distance * ExplosionFalloff), ForceMode.Impulse);
-                        if (Hit.transform.tag == "Enemy")
-                        {
-                            Hit.SendMessage("ApplyDamage", Mathf.RoundToInt(Damage / (Distance * ExplosionFalloff)));
-                        }
-                    }
-                }
+                Explosion();
             }
             else if (collision.transform.tag == "Enemy")
             {
                 collision.SendMessage("ApplyDamage", Damage);
+                Invoke(nameof(KillGameobjects), 0.1f);
             }
-
-
-            Invoke(nameof(KillGameobjects), 0.1f);
         }
     }
+
+
+    public void Explosion()
+    {
+        rb.velocity = Vector3.zero;
+        ExplosionDisplay();
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, ExplosionRadius);
+        foreach (var Hit in hitColliders)
+        {
+            if (Hit.transform.tag == "Player" || Hit.transform.tag == "Enemy")
+            {
+                Vector2 Dir = Hit.transform.position - transform.position;
+                float Distance = Vector2.Distance(Hit.transform.position, transform.position);
+                Hit.GetComponent<Rigidbody>().AddForce(Dir * ExplosionForce / (Distance * ExplosionFalloff), ForceMode.Impulse);
+                if (Hit.transform.tag == "Enemy")
+                {
+                    Hit.SendMessage("ApplyDamage", Mathf.RoundToInt(Damage / (Distance * ExplosionFalloff)));
+                }
+            }
+        }
+        Invoke(nameof(KillGameobjects), 0.1f);
+    }
+
 
     private void ExplosionDisplay()
     {
         mySphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        mySphere.transform.localScale = Vector3.one * ExplosionRadius * 2;
+        mySphere.transform.SetParent(gameObject.transform);
+        mySphere.transform.localScale = Vector3.one * ExplosionRadius * 8;
         mySphere.transform.position = transform.position + Vector3.back * 3;
         mySphere.GetComponent<SphereCollider>().enabled = false;
         Material mat = new Material(Shader.Find("UI/Default"));
@@ -90,8 +99,6 @@ public class BulletBehavior : MonoBehaviour
 
     private void KillGameobjects()
     {
-        Spawner.GetComponent<BulletSpawner>().LastBullet();
-        Destroy(mySphere);
         Destroy(gameObject);
     }
 }

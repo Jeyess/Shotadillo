@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Shotgun
   m_EditorClassIdentifier: 
   GunID: 1
+  Special: null
   Damage: 5
   Speed: 50
   Knockback: 12
@@ -26,3 +27,4 @@ MonoBehaviour:
   ExplosionForce: 0
   ExplosiveFalloff: 0
   Color: {fileID: 0}
+  GunMesh: {fileID: 0}

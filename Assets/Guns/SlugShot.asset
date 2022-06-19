@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SlugShot
   m_EditorClassIdentifier: 
   GunID: 2
+  Special: Airburst
   Damage: 15
   Speed: 20
   Knockback: 0
@@ -26,3 +27,4 @@ MonoBehaviour:
   ExplosionForce: 30
   ExplosiveFalloff: 1
   Color: {fileID: 0}
+  GunMesh: {fileID: 0}

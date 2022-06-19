@@ -9,10 +9,7 @@ public class StartEnd : MonoBehaviour
     public Button _Restart;
     public Button _Quit;
     private GameObject _Canvas;
-<<<<<<< Updated upstream
-=======
     private GameObject _Player;
->>>>>>> Stashed changes
     private Scene _Scene;
 
     private float _Score;
@@ -21,10 +18,7 @@ public class StartEnd : MonoBehaviour
     {
         _Canvas = GameObject.Find("EndCanvas");
         _Scene = SceneManager.GetActiveScene();
-<<<<<<< Updated upstream
-=======
         _Player = GameObject.Find("Player");
->>>>>>> Stashed changes
     }
 
     public void AddScore()

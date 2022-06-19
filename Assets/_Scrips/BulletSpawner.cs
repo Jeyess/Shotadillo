@@ -16,7 +16,6 @@ public class BulletSpawner : MonoBehaviour
 
     private int BulletCount;
     private int BulletDelta = 0;
-    private int BulletLimit;
 
     private float SpreadAngle;
     private float AngleDelta;
@@ -29,14 +28,13 @@ public class BulletSpawner : MonoBehaviour
 
         BulletCount = guns.BulletCount;
 
-        BulletLimit = BulletCount;
-
         if (BulletCount > 1)
         {
             SpreadAngle = guns.Spread / (BulletCount - 1);
             AngleDelta = guns.Spread / 2;
         }
         Multishot();
+
 
         Invoke("DestroyBullet", Timeout);
     }
@@ -57,6 +55,7 @@ public class BulletSpawner : MonoBehaviour
     private void Update()
     {
         BulletSizeChanger();
+        LastBullet();
     }
 
     private void BulletSizeChanger()
@@ -67,8 +66,8 @@ public class BulletSpawner : MonoBehaviour
 
     public void LastBullet()
     {
-        BulletLimit--;
-        if (BulletLimit == 0)
+        //print(gameObject.transform.childCount);
+        if (gameObject.transform.childCount <= 0)
         {
             DestroyBullet();
         }

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEditor;
 
 public class GunBehavior : MonoBehaviour
 {
@@ -10,6 +10,8 @@ public class GunBehavior : MonoBehaviour
     public Gun _gun1;
     public Gun _gun2;
     public GameObject _BulletSpawner;
+    public string _CurrentSpecial;
+    private Airburst _Burst;
     private Rigidbody _PlayerRB;
     private GameObject _Pointer;
 
@@ -18,6 +20,8 @@ public class GunBehavior : MonoBehaviour
     private int _MagSize;
     private float _ReloadTime;
     private float _ShotKnockback;
+
+    public bool _CanShoot = true;
     
     Vector3 PointerPos;
 
@@ -41,6 +45,10 @@ public class GunBehavior : MonoBehaviour
         _ReloadTime = _BulletSpawner.GetComponent<BulletSpawner>().guns.ReloadTime;
 
         _ShotKnockback = _BulletSpawner.GetComponent<BulletSpawner>().guns.Knockback;
+
+        _Burst = gameObject.GetComponent<Airburst>();
+
+        Special(_BulletSpawner.GetComponent<BulletSpawner>().guns.Special);
     }
 
     private void OnEnable()
@@ -63,7 +71,6 @@ public class GunBehavior : MonoBehaviour
         Fire();
         Reload();
         SwitchWeapon();
-
     }
 
 
@@ -78,7 +85,7 @@ public class GunBehavior : MonoBehaviour
     //Summons the bullets prefab when triggred and ammo is more then 0
     private void Fire()
     {
-        if (_Input.Inp.Shoot.triggered && _AmmoLeft > 0)
+        if (_Input.Inp.Shoot.triggered && _AmmoLeft > 0 && _CanShoot)
         {
             Vector3 Aim = Quaternion.Euler(0, 0, 15) * (PointerPos - transform.position).normalized;
             Instantiate(_BulletSpawner, transform.position, _Gun.transform.rotation);
@@ -116,10 +123,12 @@ public class GunBehavior : MonoBehaviour
             if (_gun1.GunID == _BulletSpawner.GetComponent<BulletSpawner>().guns.GunID)
             {
                 _BulletSpawner.GetComponent<BulletSpawner>().guns = _gun2;
+                Special(_BulletSpawner.GetComponent<BulletSpawner>().guns.Special);
             }
             else
             {
                 _BulletSpawner.GetComponent<BulletSpawner>().guns = _gun1;
+                Special(_BulletSpawner.GetComponent<BulletSpawner>().guns.Special);
             }
 
             _MagSize = _BulletSpawner.GetComponent<BulletSpawner>().guns.MagSize;
@@ -128,6 +137,20 @@ public class GunBehavior : MonoBehaviour
             _ReloadTime = _BulletSpawner.GetComponent<BulletSpawner>().guns.ReloadTime;
             
             _ShotKnockback = _BulletSpawner.GetComponent<BulletSpawner>().guns.Knockback;
+        }
+    }
+
+    private void Special(string Special)
+    {
+        if (Special != "null")
+        {
+            _CurrentSpecial = Special;
+            _Burst.enabled = true;
+        }
+        else
+        {
+            _CurrentSpecial = null;
+            _Burst.enabled = false;
         }
     }
 }
